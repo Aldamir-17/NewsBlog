@@ -7,6 +7,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
+                    <div class="section-title mb-0">
+                        <h4 class="m-0 text-uppercase font-weight-bold">Contact Us For Any Queries</h4>
+                    </div>
                     <div class="bg-white border border-top-0 p-4 mb-3">
                         <div class="mb-4">
                             <h6 class="text-uppercase font-weight-bold">Contact Info</h6>
@@ -82,16 +85,18 @@
                         <div class="section-title mb-0">
                             <h4 class="m-0 text-uppercase font-weight-bold">Newsletter</h4>
                         </div>
+                        <form method="post"> {% csrf_token %}
                         <div class="bg-white text-center border border-top-0 p-3">
                             <p>Aliqu justo et labore at eirmod justo sea erat diam dolor diam vero kasd</p>
                             <div class="input-group mb-2" style="width: 100%;">
-                                <input type="text" class="form-control form-control-lg" placeholder="Your Email">
+                                <input type="text" class="form-control form-control-lg" placeholder="Your Email" name="email" required="required">
                                 <div class="input-group-append">
                                     <button class="btn btn-primary font-weight-bold px-3">Sign Up</button>
                                 </div>
                             </div>
                             <small>Lorem ipsum dolor sit amet elit</small>
                         </div>
+                        </form>
                     </div>
                     <!-- Newsletter End -->
                 </div>
